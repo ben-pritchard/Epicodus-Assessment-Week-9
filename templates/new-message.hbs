@@ -1,0 +1,17 @@
+<h4>Compose Message:</h4>
+
+<form>
+  <div class="form-group">
+    <label for="recipient">To:</label>
+    {{input value=recipient class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="subject">Subject:</label>
+    {{input value=subject class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="body">Your message:</label>
+    {{textarea value=body class="form-control"}}
+  </div>
+  <button {{action 'save'}}>Send</button>
+</form>
